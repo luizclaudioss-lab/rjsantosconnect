@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RJSANTOS CONNECT | Ofertas Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f8fafc;
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .product-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .btn-ml {
+            background-color: #fff159;
+            color: #333;
+            transition: all 0.3s ease;
+        }
+
+        .btn-ml:hover {
+            background-color: #e6d700;
+            box-shadow: 0 4px 15px rgba(255, 241, 89, 0.4);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #2563eb, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .logo-glow {
+            filter: drop-shadow(0 0 10px rgba(37, 99, 235, 0.3));
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="text-slate-900">
+
+    <!-- Header / Navegação -->
+    <nav class="glass-effect border-b border-slate-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2">
+                    <div class="flex items-center gap-3">
+                        <!-- Logo com Link Direto do Google Drive Público -->
+                        <img src="https://lh3.googleusercontent.com/d/1ZX_cZpt4nPgdL1txouWDJbLEcF7Td2Yd" 
+                             alt="RJSANTOS CONNECT Logo" 
+                             class="h-12 w-12 rounded-full logo-glow object-cover border-2 border-blue-600 shadow-lg"
+                             onerror="this.src='https://ui-avatars.com/api/?name=RJ&background=0D8ABC&color=fff'">
+                        <div>
+                            <span class="text-xl font-extrabold tracking-tighter">RJSANTOS <span class="text-blue-600">CONNECT</span></span>
+                            <div class="h-1 w-full bg-blue-600 rounded-full scale-x-50 origin-left"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#ofertas" class="text-sm font-bold hover:text-blue-600 transition-colors">Ver Ofertas</a>
+                    <a href="#sobre" class="text-sm font-bold hover:text-blue-600 transition-colors">Sobre Nós</a>
+                    <div class="h-6 w-px bg-slate-200"></div>
+                    <a href="https://www.facebook.com/profile.php?id=61588278285985" target="_blank" class="bg-slate-900 text-white px-6 py-2.5 rounded-full text-xs font-bold hover:bg-blue-600 transition-all shadow-md flex items-center gap-2">
+                        <i class="fab fa-facebook-f text-base"></i> SIGA O PERFIL
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção Hero -->
+    <header class="relative bg-white pt-16 pb-24 overflow-hidden border-b border-slate-50">
+        <div class="max-w-7xl mx-auto px-4 relative z-10 text-center">
+            <div class="mb-8 flex justify-center">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-blue-600 rounded-full blur-2xl opacity-20 animate-pulse"></div>
+                    <img src="https://lh3.googleusercontent.com/d/1ZX_cZpt4nPgdL1txouWDJbLEcF7Td2Yd" 
+                         alt="Logo Destaque" 
+                         class="relative h-44 w-44 rounded-full shadow-2xl border-4 border-white logo-glow object-cover"
+                         onerror="this.style.display='none'">
+                </div>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight text-slate-900 leading-tight">
+                Achados Exclusivos <br>
+                <span class="gradient-text uppercase">RJSANTOS CONNECT</span>
+            </h1>
+            <p class="text-slate-500 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+                Bem-vindo à vitrine oficial da <strong>RJSANTOS CONNECT</strong>. Aqui você encontra as melhores promoções verificadas do Mercado Livre em um só lugar.
+            </p>
+            <div class="flex justify-center">
+                <a href="#ofertas" class="bg-blue-600 text-white px-10 py-4 rounded-2xl font-bold hover:bg-blue-700 transition-all shadow-xl shadow-blue-200 flex items-center gap-2">
+                    Explorar Ofertas <i class="fas fa-chevron-down text-xs"></i>
+                </a>
+            </div>
+        </div>
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-50 rounded-full blur-3xl opacity-50"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-indigo-50 rounded-full blur-3xl opacity-50"></div>
+    </header>
+
+    <!-- Vitrine de Produtos -->
+    <main id="ofertas" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        
+        <div class="flex items-center gap-4 mb-16">
+            <h2 class="text-3xl font-extrabold text-slate-900">Seleção RJSANTOS</h2>
+            <div class="flex-grow h-px bg-slate-200"></div>
+            <span class="bg-blue-600 text-white font-bold text-[10px] px-3 py-1 rounded-full uppercase tracking-tighter">Ofertas de Hoje</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+            
+            <!-- Produto 1: Motorola -->
+            <div class="product-card bg-white rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm flex flex-col">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&q=80&w=600" alt="Motorola" class="w-full h-full object-cover">
+                    <span class="absolute top-4 left-4 bg-blue-600 text-white text-[10px] font-black px-3 py-1.5 rounded-lg shadow-lg">TOP DE LINHA</span>
+                </div>
+                <div class="p-6 flex-grow flex flex-col text-center">
+                    <h3 class="font-bold text-lg mb-2 leading-tight">Motorola Edge 60 Neo 5G</h3>
+                    <p class="text-slate-500 text-xs mb-6 flex-grow">256GB, 24GB RAM Boost. Performance extrema para o seu dia.</p>
+                    <a href="https://mercadolivre.com/sec/1Ndrme6" target="_blank" class="btn-ml w-full py-3.5 rounded-xl font-bold text-xs text-center flex items-center justify-center gap-2">
+                        VER NO MERCADO LIVRE <i class="fas fa-external-link-alt text-[10px]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Produto 2: Samsung -->
+            <div class="product-card bg-white rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm flex flex-col">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&q=80&w=600" alt="Samsung" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 flex-grow flex flex-col text-center">
+                    <h3 class="font-bold text-lg mb-2 leading-tight">Samsung Galaxy A16 128GB</h3>
+                    <p class="text-slate-500 text-xs mb-6 flex-grow">Câmara de 50MP e Ecrã 6.7". Qualidade Samsung garantida.</p>
+                    <a href="https://mercadolivre.com/sec/2Gg1FSm" target="_blank" class="btn-ml w-full py-3.5 rounded-xl font-bold text-xs text-center">
+                        COMPRAR AGORA
+                    </a>
+                </div>
+            </div>
+
+            <!-- Produto 3: Headset -->
+            <div class="product-card bg-white rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm flex flex-col text-center">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=600" alt="Headset" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="font-bold text-lg mb-2 leading-tight">Headset ANC Bluetooth</h3>
+                    <p class="text-slate-500 text-xs mb-6 flex-grow">Redução de Ruído Ativa e som HiFi de alta fidelidade.</p>
+                    <a href="https://mercadolivre.com/sec/2XmESYQ" target="_blank" class="btn-ml w-full py-3.5 rounded-xl font-bold text-xs text-center">
+                        VER PROMOÇÃO
+                    </a>
+                </div>
+            </div>
+
+            <!-- Produto 4: Kit Tênis -->
+            <div class="product-card bg-white rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm flex flex-col text-center">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=600" alt="Kit Tênis" class="w-full h-full object-cover">
+                    <span class="absolute bottom-4 right-4 bg-white/90 px-3 py-1 rounded-full text-[10px] font-bold text-blue-600 shadow-sm">+ RELÓGIO</span>
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="font-bold text-lg mb-2 leading-tight">Kit 2 Ténis Academia</h3>
+                    <p class="text-slate-500 text-xs mb-6 flex-grow">Combo feminino completo para treino e caminhada.</p>
+                    <a href="https://mercadolivre.com/sec/1YAczio" target="_blank" class="btn-ml w-full py-3.5 rounded-xl font-bold text-xs text-center">
+                        VER KIT COMPLETO
+                    </a>
+                </div>
+            </div>
+
+            <!-- Produto 5: Mochila -->
+            <div class="product-card bg-white rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm flex flex-col text-center">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&q=80&w=600" alt="Mochila" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="font-bold text-lg mb-2 leading-tight">Mochila Impermeável</h3>
+                    <p class="text-slate-500 text-xs mb-6 flex-grow">Reforçada com aço, ideal para notebook e escola.</p>
+                    <a href="https://mercadolivre.com/sec/1gB8WeC" target="_blank" class="btn-ml w-full py-3.5 rounded-xl font-bold text-xs text-center">
+                        VER DETALHES
+                    </a>
+                </div>
+            </div>
+
+            <!-- Produto 6: E6s -->
+            <div class="product-card bg-white rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm flex flex-col text-center">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&q=80&w=600" alt="E6s TWS" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="font-bold text-lg mb-2 leading-tight">Fones Sem Fio E6s TWS</h3>
+                    <p class="text-slate-500 text-xs mb-6 flex-grow">Com visor LED e Bluetooth 5.0. Conforto e tecnologia.</p>
+                    <a href="https://mercadolivre.com/sec/2faXikj" target="_blank" class="btn-ml w-full py-3.5 rounded-xl font-bold text-xs text-center">
+                        APROVEITAR
+                    </a>
+                </div>
+            </div>
+
+            <!-- Produto 7: Olymp Space -->
+            <div class="product-card bg-white rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm flex flex-col text-center">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&q=80&w=600" alt="Olymp Space" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="font-bold text-lg mb-2 leading-tight">Ténis Olymp Space</h3>
+                    <p class="text-slate-500 text-xs mb-6 flex-grow">Conforto máximo para caminhada e uso diário.</p>
+                    <a href="https://mercadolivre.com/sec/1BtAjgs" target="_blank" class="btn-ml w-full py-3.5 rounded-xl font-bold text-xs text-center">
+                        COMPRAR AGORA
+                    </a>
+                </div>
+            </div>
+
+            <!-- Produto 8: Minecraft -->
+            <div class="product-card bg-white rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm flex flex-col text-center">
+                <div class="relative h-64 overflow-hidden bg-green-50">
+                    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&q=80&w=600" alt="Minecraft" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="font-bold text-lg mb-2 leading-tight">Kit Escolar Minecraft</h3>
+                    <p class="text-slate-500 text-xs mb-6 flex-grow">Mochila de Rodinhas + Estojo + Lancheira.</p>
+                    <a href="https://mercadolivre.com/sec/2DgjDRL" target="_blank" class="btn-ml w-full py-3.5 rounded-xl font-bold text-xs text-center">
+                        VER KIT ESCOLAR
+                    </a>
+                </div>
+            </div>
+
+            <!-- Produto 9: Kit Tênis + Meia -->
+            <div class="product-card bg-white rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm flex flex-col text-center">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1512374382149-433a72b9a5a5?auto=format&fit=crop&q=80&w=600" alt="Kit Tênis" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="font-bold text-lg mb-2 leading-tight">Kit Ténis + Relógio + Meia</h3>
+                    <p class="text-slate-500 text-xs mb-6 flex-grow">Combo fitness completo para corrida e treino.</p>
+                    <a href="https://mercadolivre.com/sec/16sNXv5" target="_blank" class="btn-ml w-full py-3.5 rounded-xl font-bold text-xs text-center">
+                        VER OFERTA
+                    </a>
+                </div>
+            </div>
+
+            <!-- Produto 10: Kaidi Rosa -->
+            <div class="product-card bg-white rounded-[2rem] overflow-hidden border border-slate-100 shadow-sm flex flex-col text-center">
+                <div class="relative h-64 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?auto=format&fit=crop&q=80&w=600" alt="Kaidi Rosa" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="font-bold text-lg mb-2 leading-tight">Fone Kaidi KD-771 Rosa</h3>
+                    <p class="text-slate-500 text-xs mb-6 flex-grow">Edição PowerX Rosa. Tecnologia sem fio e muito estilo.</p>
+                    <a href="https://mercadolivre.com/sec/2B4KLrR" target="_blank" class="btn-ml w-full py-3.5 rounded-xl font-bold text-xs text-center">
+                        VER NO SITE
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="sobre" class="bg-slate-900 text-slate-400 py-20 mt-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-3 text-white mb-6">
+                        <img src="https://lh3.googleusercontent.com/d/1ZX_cZpt4nPgdL1txouWDJbLEcF7Td2Yd" 
+                             alt="Logo Footer" 
+                             class="h-10 w-10 rounded-full object-cover border border-slate-700 shadow-lg"
+                             onerror="this.src='https://ui-avatars.com/api/?name=RJ&background=0D8ABC&color=fff'">
+                        <span class="text-2xl font-black tracking-tighter">RJSANTOS <span class="text-blue-500 uppercase">Connect</span></span>
+                    </div>
+                    <p class="text-sm leading-relaxed max-w-xs">
+                        Sua conexão de confiança com os melhores produtos eletrônicos e de estilo. Curadoria feita com dedicação por Luiz Santos.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h4 class="text-white font-bold mb-2 uppercase text-xs tracking-widest">Nossas Redes</h4>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/luizsantos1218/" target="_blank" class="w-12 h-12 rounded-2xl bg-slate-800 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-all shadow-lg">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61588278285985" target="_blank" class="w-12 h-12 rounded-2xl bg-slate-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all shadow-lg">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="https://whatsapp.com/channel/0029VbCSnQj1t90lua4vm83F" target="_blank" class="w-12 h-12 rounded-2xl bg-slate-800 flex items-center justify-center hover:bg-green-600 hover:text-white transition-all shadow-lg">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h4 class="text-white font-bold mb-2 uppercase text-xs tracking-widest">Informação</h4>
+                    <a href="https://whatsapp.com/channel/0029VbCSnQj1t90lua4vm83F" target="_blank" class="text-sm hover:text-white transition-colors">Apoio via WhatsApp</a>
+                    <a href="https://www.facebook.com/profile.php?id=61588278285985" target="_blank" class="text-sm hover:text-white transition-colors">Dúvidas no Facebook</a>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-800 text-center text-[10px] uppercase tracking-widest font-bold">
+                <p>&copy; 2024 RJSANTOS CONNECT. LINKS AFILIADOS MERCADO LIVRE.</p>
+                <p class="mt-2 text-slate-600 tracking-normal font-normal">Organizado por Luiz Santos.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
